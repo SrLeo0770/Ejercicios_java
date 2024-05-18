@@ -5,15 +5,27 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int numero;
 
-        do {
-            System.out.print("Escriba un número mayor a 10 y menor que 30: ");
-            numero = scanner.nextInt();
-        } while (numero <= 10 || numero >= 30);
+        System.out.print("Escriba un número del 1 al 5: ");
+        numero = scanner.nextInt();
 
-        int contador = 1;
-        while (contador <= numero) {
-            System.out.println(contador);
-            contador += 2;
+        switch (numero) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            default:
+                System.out.println("El número debe estar entre 1 y 5.");
         }
     }
 }
